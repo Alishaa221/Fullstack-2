@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}

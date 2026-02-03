@@ -1,0 +1,25 @@
+/* src/index.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* IMPORTANT: This ensures the body takes up the full screen */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff; /* Fallback color */
+}
+
+/* IMPORTANT: This ensures the React root div is not restricted */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Overrides default center alignment */
+}
