@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Navigation Styles */
+/* ─────────────────────────────────────────────────────────── */
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #64748b;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+.nav-link.active {
+  color: #1e293b;
+  background: #f1f5f9;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Breadcrumb Styles */
+/* ─────────────────────────────────────────────────────────── */
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.breadcrumb-link {
+  color: #64748b;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: #1e293b;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+}
+
+.breadcrumb-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Page Layout */
+/* ─────────────────────────────────────────────────────────── */
+
+.page-container {
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container.narrow {
+  max-width: 900px;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Card Styles */
+/* ─────────────────────────────────────────────────────────── */
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.card.quick-nav {
+  background: #f8fafc;
+  padding: 32px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.card-text {
+  color: #64748b;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.card-content {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.card-content p {
+  margin-bottom: 16px;
+}
+
+.card-content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.card-content li {
+  margin-bottom: 8px;
+}
+
+.card-footer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Button Styles */
+/* ─────────────────────────────────────────────────────────── */
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #1e293b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #334155;
+}
+
+.back-link {
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: #334155;
+}
+
+.back-section {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Feature List */
+/* ─────────────────────────────────────────────────────────── */
+
+.feature-list {
+  color: #64748b;
+  line-height: 2;
+  padding-left: 24px;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Products Grid */
+/* ─────────────────────────────────────────────────────────── */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #94a3b8;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.product-category {
+  color: #64748b;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.product-btn {
+  width: 100%;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Contact Page */
+/* ─────────────────────────────────────────────────────────── */
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.contact-item p {
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────── */
+/* Responsive Design */
+/* ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
