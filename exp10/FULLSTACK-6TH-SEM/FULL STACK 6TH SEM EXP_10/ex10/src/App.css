@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+
+.app {
+  text-align: center;
+  font-family: Arial;
+}
+
+.chat-box {
+  width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.username {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.input-area {
+  display: flex;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 8px;
+}
+
+.input-area button {
+  padding: 8px;
+}
+
